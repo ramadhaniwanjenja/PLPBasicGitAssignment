@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/MentorCard.module.css';
+import { Link } from 'react-router-dom';
 
 export const MentorCard = ({ name, title, image, experience, education, career, tools }) => {
   return (
@@ -17,7 +18,9 @@ export const MentorCard = ({ name, title, image, experience, education, career, 
         <p className={styles.education}><strong>Education:</strong> {education}</p>
         <p className={styles.career}><strong>Career:</strong> {career}</p>
         <p className={styles.tools}><strong>Tools:</strong> {tools}</p>
+        <Link to="/livechatroom" className={styles.contactLink} style={{textDecoration: "none", color: "inherit"}}>
         <button className={styles.contactButton}>Talk to mentor</button>
+        </Link>
       </div>
     </article>
   );

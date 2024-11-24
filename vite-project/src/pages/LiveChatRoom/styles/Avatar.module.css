@@ -1,0 +1,15 @@
+.avatar {
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+  }
+  
+  .medium {
+    width: 100px;
+    aspect-ratio: 1.01;
+  }
+  
+  .small {
+    width: 50px;
+    aspect-ratio: 1;
+  }

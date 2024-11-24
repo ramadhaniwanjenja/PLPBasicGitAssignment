@@ -1,0 +1,21 @@
+.iconButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .icon {
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .medium {
+    width: 40px;
+    aspect-ratio: 1;
+  }
+  
+  .small {
+    width: 35px;
+    aspect-ratio: 1;
+  }

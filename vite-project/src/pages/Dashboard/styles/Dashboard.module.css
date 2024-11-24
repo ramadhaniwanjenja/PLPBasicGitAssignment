@@ -1,0 +1,195 @@
+.dashboardContainer {
+    border-radius: 40px;
+    background: #F3EBE5;
+    display: flex;
+    padding: 52px 59px 52px 21px;
+    font-weight: 600;
+  }
+  
+  .sidebar {
+    border-radius: 10px;
+    background: #A59B9B;
+    color: #FFF;
+    padding: 20px 0 36px;
+    font: 14px Inter, sans-serif;
+  }
+  
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px 0 11px;
+  }
+  
+  .sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+  }
+  
+  .sidebarIcon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+  
+  .sidebarLabel {
+    margin-top: 9px;
+  }
+  
+  .active {
+    background: #000;
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 55px;
+    object-fit: contain;
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-left: 80px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .dashboardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 84px;
+  }
+  
+  .headerContent {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .headerIcon {
+    width: 73px;
+    object-fit: contain;
+  }
+  
+  .headerTitle {
+    font-size: 48px;
+    color: #000;
+  }
+  
+  .searchContainer {
+    background: #C8C7C7;
+    display: flex;
+    gap: 13px;
+    padding: 10px 15px;
+    align-items: center;
+  }
+  
+  .searchInput {
+    background: transparent;
+    border: none;
+    color: #E0DEDE;
+    font-size: 20px;
+    outline: none;
+  }
+  
+  .searchIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .assignmentCard {
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 27px;
+  }
+  
+  .cardHeader {
+    background: #D7D2D2;
+    padding: 18px 23px;
+    font-size: 20px;
+  }
+  
+  .cardContent {
+    padding: 24px 23px;
+    font-size: 20px;
+  }
+  
+  .contentGrid {
+    display: flex;
+    gap: 79px;
+  }
+  
+  .moduleNav {
+    background: #000;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 68px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 14px Inter, sans-serif;
+  }
+  
+  .moduleItem {
+    background: transparent;
+    border: none;
+    color: #FFF;
+    margin: 20px 0;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .divider {
+    border: 1px solid #000;
+    margin: 32px 0;
+  }
+  
+  .score {
+    font-weight: 400;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .dashboardContainer {
+      padding: 0 20px;
+    }
+  
+    .sidebarContent {
+      padding-right: 20px;
+    }
+  
+    .mainContent {
+      margin-left: 20px;
+    }
+  
+    .headerTitle {
+      font-size: 40px;
+    }
+  
+    .profileImage {
+      margin-top: 40px;
+    }
+  
+    .contentGrid {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }

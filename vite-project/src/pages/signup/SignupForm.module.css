@@ -1,0 +1,178 @@
+.signupContainer {
+  border-radius: 20px;
+  background-color: rgba(51, 70, 64, 1);
+  overflow: hidden;
+}
+
+.contentWrapper {
+  gap: 20px;
+  display: flex;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 60%;
+}
+
+.formContent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align input fields */
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 40px; /* Adjusted padding for better spacing */
+}
+
+.formTitle {
+  color: #000;
+  align-self: center;
+  font: 700 48px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.inputGroup {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap on smaller screens */
+  gap: 0px; /* Reduced gap for better spacing */
+  margin-top: 40px; /* Adjusted margin */
+  width: 100%; /* Full width */
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputLabel {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+}
+
+.textInput {
+  border-radius: 10px;
+  background-color: #37373E;
+  margin-top: 8px;
+  padding: 22px 20px;
+  color: #8C8C8C;
+  font: 600 15px Montserrat, sans-serif;
+  border: none;
+  width: 100%; /* Full width by default */
+  max-width: 400px; /* Restrict maximum width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.submitButton {
+  border-radius: 10px;
+  background-color: #0EC300;
+  color: #fff;
+  padding: 11px 37px;
+  font: 600 20px Montserrat, sans-serif;
+  border: none;
+  cursor: pointer;
+  margin: 83px auto 0;
+  width: fit-content;
+}
+
+.socialLoginSection {
+  margin-top: 49px;
+  width: 100%;
+  max-width: 485px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  height: 1px;
+  background-color: #000;
+  flex: 1;
+}
+
+.socialButton {
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80px;
+  height: 85px;
+  border: 1px solid #000;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.welcomeSection {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.welcomeText {
+  color: #fff;
+  font: 700 48px Montserrat, sans-serif;
+}
+
+.welcomeHighlight {
+  font-size: 24px;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 991px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .formSection {
+    width: 100%;
+  }
+
+  .formContent {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px; /* Reduced padding for smaller screens */
+  }
+
+  .formTitle {
+    font-size: 40px;
+  }
+
+  .inputGroup {
+    flex-direction: column; /* Stack inputs vertically */
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .textInput {
+    max-width: 100%; /* Allow full width on small screens */
+  }
+
+  .submitButton {
+    margin-top: 40px;
+  }
+
+  .welcomeSection {
+    width: 100%;
+  }
+
+  .welcomeText {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+}

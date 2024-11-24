@@ -1,0 +1,192 @@
+.mainContainer {
+    border-radius: 40px;
+    background: rgba(243, 235, 229, 1);
+    padding: 44px 29px 44px 14px;
+    overflow: hidden;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebarContainer {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navigationMenu {
+    display: flex;
+    margin-top: 28px;
+    flex-grow: 1;
+    color: #fff;
+    font: 600 14px Inter, sans-serif;
+  }
+  
+  .menuWrapper {
+    border-radius: 10px;
+    background: rgba(165, 155, 155, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+    padding: 20px 0 36px;
+  }
+  
+  .menuContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px 0 11px;
+  }
+  
+  .logo {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 44px;
+    align-self: center;
+  }
+  
+  .navItem {
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+  }
+  
+  .navItemActive {
+    background: #000;
+  }
+  
+  .navItemInactive {
+    background: rgba(248, 247, 247, 1);
+  }
+  
+  .navText {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .profileImage {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 55px;
+  }
+  
+  .modulesContainer {
+    border-radius: 20px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 68px 16px;
+    margin: auto 0;
+  }
+  
+  .moduleItem {
+    margin-top: 38px;
+  }
+  
+  .mainContent {
+    width: 83%;
+  }
+  
+  .courseContent {
+    width: 73%;
+  }
+  
+  .courseHeader {
+    font: 600 48px Montserrat, sans-serif;
+    color: #000;
+  }
+  
+  .weekSection {
+    margin-top: 50px;
+    padding-left: 36px;
+  }
+  
+  .weekTitle {
+    font: 600 24px Montserrat, sans-serif;
+  }
+  
+  .weekContent {
+    border-radius: 10px;
+    background: #fff;
+    padding: 38px 17px;
+    margin-top: 14px;
+    font: 600 20px Montserrat, sans-serif;
+  }
+  
+  .assessmentPanel {
+    width: 27%;
+    background: #fff;
+    margin-top: 133px;
+    padding: 26px 43px 337px 18px;
+    font: 600 20px Montserrat, sans-serif;
+  }
+  
+  .assessmentTitle {
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  
+  .quizScore {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .assignmentStatus {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContainer {
+      padding-right: 20px;
+    }
+  
+    .contentWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .sidebarContainer,
+    .mainContent,
+    .courseContent {
+      width: 100%;
+    }
+  
+    .navigationMenu {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  
+    .menuContent {
+      padding-right: 20px;
+    }
+  
+    .navItem {
+      margin: 40px 0 0 7px;
+    }
+  
+    .profileImage {
+      margin-top: 40px;
+    }
+  
+    .weekSection {
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+  
+    .assessmentPanel {
+      margin-top: 40px;
+      padding: 0 20px 100px 0;
+    }
+  }

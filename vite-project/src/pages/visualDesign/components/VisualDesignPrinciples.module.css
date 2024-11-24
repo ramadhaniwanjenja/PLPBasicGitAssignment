@@ -1,0 +1,82 @@
+.container {
+    border-radius: 40px;
+    background: rgba(243, 235, 229, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+    padding: 49px 80px;
+    font: 600 24px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .title {
+    font-size: 48px;
+  }
+  
+  .definitionCard {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    width: 1062px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 41px 0 0 28px;
+    padding: 65px 59px;
+  }
+  
+  .applicationCard {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    width: 1062px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 90px 0 0 28px;
+    padding: 21px 68px 38px;
+  }
+  
+  .navigationWrapper {
+    align-self: stretch;
+    display: flex;
+    margin-top: 79px;
+    gap: 20px;
+    color: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .navButton {
+    border-radius: 10px;
+    background: rgba(43, 192, 63, 1);
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 17px 45px;
+  }
+  
+  .regularText {
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .definitionCard,
+    .applicationCard {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  
+    .navigationWrapper {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }

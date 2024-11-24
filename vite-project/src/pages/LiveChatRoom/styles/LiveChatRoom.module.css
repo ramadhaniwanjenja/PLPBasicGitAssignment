@@ -1,0 +1,108 @@
+.chatRoom {
+    border-radius: 40px;
+    background: #fff;
+    display: flex;
+    padding: 0 0 44px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .header {
+    border-radius: 40px 40px 0 0;
+    background: #37373E;
+    box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 22px 21px 22px 78px;
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 48px;
+    color: #fff;
+    font: 600 30px Montserrat, sans-serif;
+  }
+  
+  .userName {
+    margin: auto 0;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin: auto 0;
+  }
+  
+  .statusIndicator {
+    background: #2BC03F;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .statusMessage {
+    border-radius: 10px;
+    background: #37373E;
+    margin-top: 62px;
+    width: 273px;
+    overflow: hidden;
+    color: #8C8C8C;
+    padding: 17px 70px;
+    font: 600 15px Montserrat, sans-serif;
+  }
+  
+  .messageArea {
+    display: flex;
+    margin-top: 819px;
+    width: 100%;
+    max-width: 1163px;
+    gap: 54px;
+    color: #8C8C8C;
+    font: 600 30px Montserrat, sans-serif;
+  }
+  
+  .messageInput {
+    border-radius: 50px;
+    background: #37373E;
+    overflow: hidden;
+    flex-grow: 1;
+    padding: 27px 70px;
+    border: none;
+    color: #8C8C8C;
+    font: inherit;
+  }
+  
+  .sendButton {
+    background: #0EC300;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 20px;
+    }
+  
+    .statusMessage {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  
+    .messageArea {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .messageInput {
+      padding: 20px;
+    }
+  }

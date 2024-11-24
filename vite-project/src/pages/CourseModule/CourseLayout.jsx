@@ -1,7 +1,7 @@
-import React from 'react';
 import styles from './CourseLayout.module.css';
 import { NavItem } from './components/NavItem';
 import { WeekSection } from './components/WeekSection';
+import { Link } from 'react-router-dom';
 
 const navigationItems = [
   { label: 'Home', isActive: false },
@@ -35,7 +35,9 @@ export function CourseLayout() {
             <div className={styles.modulesContainer}>
               <span>Modules</span>
               <span className={styles.moduleItem}>Assignment</span>
+              <Link to="/quiz" className={styles.moduleItem} style={{ textDecoration: "none", color: "inherit" }}>
               <span className={styles.moduleItem}>Quizzes</span>
+              </Link>
               <span className={styles.moduleItem}>Forums</span>
             </div>
           </nav>

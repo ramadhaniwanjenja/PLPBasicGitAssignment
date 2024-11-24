@@ -1,13 +1,13 @@
-import React from 'react';
 import { NavigationItem } from './components/NavigationItem';
 import { MentorCard } from './components/MentorCard';
 import styles from './styles/MentorProfile.module.css';
 
 const navigationItems = [
-  { icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/067091cfade3b022546f7e7425b6ea84a9dd808f080dcae1e3edf2ee3ef07aa5?placeholderIfAbsent=true&apiKey=948df72a40ee4e568bae6fc607598694', label: 
-    'Home', isActive: false },
-  { icon: '', label: 'Mentors', isActive: true },
-  { icon: '', label: 'Courses', isActive: false }
+  { icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/067091cfade3b022546f7e7425b6ea84a9dd808f080dcae1e3edf2ee3ef07aa5?placeholderIfAbsent=true&apiKey=948df72a40ee4e568bae6fc607598694',
+     label: 
+    'Home', isActive: false, link: "/" },
+  { icon: '', label: 'Mentors', isActive: true, link: "/mentorprofile" },
+  { icon: '', label: 'Courses', isActive: false, link: "/coursemodule" },
 ];
 
 const mentorData = {
